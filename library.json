@@ -1,0 +1,107 @@
+{
+    "name": "InkaLogicModbus",
+    "version": "1.0.0",
+    "description": "Modbus RTU master library for ESP32 using ESP-IDF UART and freemodbus. Supports FC01-FC06, FC0F, FC10, FC16, FC17 over RS-485.",
+    "keywords": "modbus, rtu, rs485, esp32, master, uart, freemodbus, serial",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/boxlink/INKALOGIC.git"
+    },
+    "authors": [
+        {
+            "name": "InkaLogic",
+            "maintainer": true
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "frameworks": "arduino",
+    "platforms": "espressif32",
+    "headers": "inkaLogicModbus.h",
+    "examples": [
+        {
+            "name": "readHoldingRegisters",
+            "base": "examples/readHoldingRegisters",
+            "files": ["readHoldingRegisters.ino"]
+        },
+        {
+            "name": "readHoldingRegisters_Wire",
+            "base": "examples/readHoldingRegisters_Wire",
+            "files": ["readHoldingRegisters_Wire.ino"]
+        },
+        {
+            "name": "readInputRegisters",
+            "base": "examples/readInputRegisters",
+            "files": ["readInputRegisters.ino"]
+        },
+        {
+            "name": "writeSingleRegister",
+            "base": "examples/writeSingleRegister",
+            "files": ["writeSingleRegister.ino"]
+        },
+        {
+            "name": "writeSingleCoil",
+            "base": "examples/writeSingleCoil",
+            "files": ["writeSingleCoil.ino"]
+        },
+        {
+            "name": "readCoils",
+            "base": "examples/readCoils",
+            "files": ["readCoils.ino"]
+        },
+        {
+            "name": "readDiscreteInputs",
+            "base": "examples/readDiscreteInputs",
+            "files": ["readDiscreteInputs.ino"]
+        },
+        {
+            "name": "writeMultipleCoils_beginTx",
+            "base": "examples/writeMultipleCoils_beginTx",
+            "files": ["writeMultipleCoils_beginTx.ino"]
+        },
+        {
+            "name": "writeMultipleCoils_setBuffer",
+            "base": "examples/writeMultipleCoils_setBuffer",
+            "files": ["writeMultipleCoils_setBuffer.ino"]
+        },
+        {
+            "name": "writeMultipleRegisters_beginTx",
+            "base": "examples/writeMultipleRegisters_beginTx",
+            "files": ["writeMultipleRegisters_beginTx.ino"]
+        },
+        {
+            "name": "writeMultipleRegisters_setBuffer",
+            "base": "examples/writeMultipleRegisters_setBuffer",
+            "files": ["writeMultipleRegisters_setBuffer.ino"]
+        },
+        {
+            "name": "send_uint32",
+            "base": "examples/send_uint32",
+            "files": ["send_uint32.ino"]
+        },
+        {
+            "name": "send_uint8",
+            "base": "examples/send_uint8",
+            "files": ["send_uint8.ino"]
+        },
+        {
+            "name": "maskWriteRegister",
+            "base": "examples/maskWriteRegister",
+            "files": ["maskWriteRegister.ino"]
+        },
+        {
+            "name": "readWriteMultipleRegisters_4params",
+            "base": "examples/readWriteMultipleRegisters_4params",
+            "files": ["readWriteMultipleRegisters_4params.ino"]
+        },
+        {
+            "name": "readWriteMultipleRegisters_beginTx",
+            "base": "examples/readWriteMultipleRegisters_beginTx",
+            "files": ["readWriteMultipleRegisters_beginTx.ino"]
+        },
+        {
+            "name": "changeSlave",
+            "base": "examples/changeSlave",
+            "files": ["changeSlave.ino"]
+        }
+    ]
+}
